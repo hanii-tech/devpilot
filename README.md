@@ -22,32 +22,13 @@ Instead of relying on a single AI agent, DevPilot coordinates multiple specializ
 
 # 🏗️ Architecture
 
-```
-                User
-                  │
-                  ▼
-          DevPilot (Root Agent)
-                  │
-      Sequential Multi-Agent Pipeline
-                  │
-      ┌───────────┼───────────┐
-      ▼           ▼           ▼
-  Planner     Research     Coding
-                                │
-                                ▼
-                            Review
-                                │
-                                ▼
-                       Documentation
-                                │
-               ┌────────────────┴───────────────┐
-               ▼                                ▼
-      README Generator Tool          DOCX Generator Tool
-```
+![DevPilot Architecture](screenshots/architecture.jpeg)
 
 ---
 
 # 🔄 Workflow
+
+![DevPilot Workflow](screenshots/workflow.jpeg)
 
 1. User provides a software project idea.
 2. Planner Agent creates the project plan.
@@ -226,10 +207,21 @@ DevPilot automatically:
 Add screenshots here after testing.
 
 - ADK Interface
-- Generated Project Plan
+
+![ADK Interface](screenshots/adk_interface.png)
+
+- Project Structure 
+
+![Project Structure](screenshots/project_structure.png)
+
 - Generated Documentation
-- README Output
-- DOCX Output
+
+![Generated DOCX](screenshots/generated_docx.png)
+
+- Generated README.md
+
+![Generated README](screenshots/generated_readme.png)
+
 
 ---
 
